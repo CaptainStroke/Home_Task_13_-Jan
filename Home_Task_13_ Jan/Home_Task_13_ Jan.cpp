@@ -38,6 +38,33 @@
 
 //3. Программа печатает таблицу соответствия температур по Цельсию и Фаренгейту  в указанном диапазоне.
 
+#include <iostream>
+using namespace std;
+int main()
+{
+	double CelcLow, CelcHigh, Fahr, FC, CF;
+    cout << "Let's input Celcius degrees - ";
+    cin >> CelcLow >> CelcHigh;
+    if (CelcLow > CelcHigh)
+    {
+        cout << "Wrong entry";
+        return 0;
+    }
+    Fahr = CelcLow * 9 / 5 + 32;
+    while (CelcLow <= CelcHigh )
+    {
+        Fahr = CelcLow * 9 / 5 + 32;
+        cout << CelcLow << " Celcius   " << Fahr << " Fahr\n";
+        CelcLow++;
+    }
+    /*cout << Fahr << " Fahrengeits!\n";
+    cout << "Bonus. Enter Fahrengeits - ";
+    cin >> FC;
+    CF = (FC - 32) * 5 / 9;
+    cout << CF << " Celcius\n";*/
+
+}
+
 //4. Написать программу, вычисляющую факториал введённого числа.
 
 //5. С клавиатуры вводится целое число любой разрядности.Определить количество цифр в нём и их сумму.
