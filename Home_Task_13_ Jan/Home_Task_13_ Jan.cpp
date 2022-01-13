@@ -1,6 +1,40 @@
 ﻿//1. Написать программу, выводящую на экран только чётные целые числа из диапазона от 1 до 100.
 
+//#include <iostream>
+//using namespace std;
+//int main()
+//{
+//	int x = 1;
+//	while (x <= 50)
+//	{
+//		cout << 2*x++ << "\n";
+//	}
+//}
+
 //2. Вычислить сумму чисел в диапазоне от M до N.
+
+//#include <iostream>
+//using namespace std;
+//int main()
+//{
+//	int M;
+//	int N;
+//	int SUM = 0;
+//	cout << "Enter first number M and second number N of array - "; 
+//	cin >> M >> N;
+//	if (M > N)
+//	{
+//		cout << "Wrong Wrong";
+//		return 0;
+//	}
+//	while (M <= N)
+//	{
+//		SUM += M;
+//		cout << SUM << "\n";
+//		M++;
+//	}
+//	cout << "Final count = " << SUM << "\n";
+//}
 
 //3. Программа печатает таблицу соответствия температур по Цельсию и Фаренгейту  в указанном диапазоне.
 
