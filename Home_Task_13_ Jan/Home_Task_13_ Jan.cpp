@@ -82,37 +82,68 @@
 
 //5. С клавиатуры вводится целое число любой разрядности.Определить количество цифр в нём и их сумму
 
-#include <iostream>
-using namespace std;
-int main()
-{
-    int number;
-    cin >> number;
-    int rem;
-    int sum = 0;
-    int exp = 1;
-    while (pow(10, exp) < abs(number))
-    {
-        exp++;
-    }
-    cout << exp << " = Razryads\n";
-    cout << number << " = Number\n";
-    while (exp >= 1)
-    {
-        rem = number % 10;
-        //cout << rem;
-        sum = sum + rem;
-        number = number / 10;
-        exp--;
-    }
-    cout << "\n" << sum << " Sum of digets\n";
-   
-    
-}
+//#include <iostream>
+//using namespace std;
+//int main()
+//{
+//    cout << "Enter number";
+//    int number;
+//    cin >> number;
+//    int rem;
+//    int sum = 0;
+//    int exp = 1;
+//    while (pow(10, exp) < abs(number))
+//    {
+//        exp++;
+//    }
+//    cout << number << " = Number\n";
+//    cout << exp << " = Razryads\n";
+//    while (exp >= 1)
+//    {
+//        rem = number % 10;
+//        //cout << rem;
+//        sum = sum + rem;
+//        number = number / 10;
+//        exp--;
+//    }
+//    cout << "\n" << sum << " Sum of digets\n"; 
+//}
 
 //6. С клавиатуры вводится целое число любой разрядности.Необходимо перевернуть это число, т.е.цифры должны располагаться в обратном порядке(например, вводим число 1234 – в результате будет 4321).
 
+//#include <iostream>
+//using namespace std;
+//int main()
+//{
+//    cout << "Enter number - ";
+//    int number = 0;
+//    int rem;
+//    cin >> number;
+//    while (number > 0)
+//    {
+//        rem = number % 10;
+//        cout << rem;
+//        number = number / 10;
+//    }
+//}
+
 //7. С клавиатуры вводится целое число.Вывести на экран все числа, на которые введённое число делится без остатка.Например, для 60 такими числами станут 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60.
+
+#include <iostream>
+using namespace std;;
+int main()
+{
+    cout << "Enter number";
+    int number;
+    cin >> number;
+    int div = 1;
+    while (div < number)
+    {
+        (number % div == 0) ? cout << div << ", " : cout << "";
+        div++;
+    }
+    cout << div << ".";
+}
 
 //8. С клавиатуры вводится целое число.Определить, является ли оно простым.Простое число делится без остатка только на 1 и само на себя.
 
