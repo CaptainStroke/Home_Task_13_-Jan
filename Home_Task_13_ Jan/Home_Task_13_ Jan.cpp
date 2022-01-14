@@ -129,22 +129,42 @@
 
 //7. С клавиатуры вводится целое число.Вывести на экран все числа, на которые введённое число делится без остатка.Например, для 60 такими числами станут 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60.
 
-#include <iostream>
-using namespace std;;
-int main()
-{
-    cout << "Enter number";
-    int number;
-    cin >> number;
-    int div = 1;
-    while (div < number)
-    {
-        (number % div == 0) ? cout << div << ", " : cout << "";
-        div++;
-    }
-    cout << div << ".";
-}
+//#include <iostream>
+//using namespace std;;
+//int main()
+//{
+//    cout << "Enter number";
+//    int number;
+//    cin >> number;
+//    int div = 1;
+//    while (div < number)
+//    {
+//        (number % div == 0) ? cout << div << ", " : cout << "";
+//        div++;
+//    }
+//    cout << div << ".";
+//}
 
 //8. С клавиатуры вводится целое число.Определить, является ли оно простым.Простое число делится без остатка только на 1 и само на себя.
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    cout << "Enter number\n";
+    int number;
+    cin >> number;
+    int div=2;
+    while (div < number)
+    {
+        if (number % div == 0)
+        {
+            cout << "ordinary ";
+            return 0;
+            }
+        div++;
+    }
+    cout << "Simple number\n";
+}
 
 //9. Проверить, есть ли во введённом числе одинаковые цифры подряд.
