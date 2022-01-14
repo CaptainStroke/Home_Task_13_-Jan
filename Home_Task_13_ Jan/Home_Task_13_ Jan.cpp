@@ -89,7 +89,7 @@ int main()
     int number;
     cin >> number;
     int rem;
-    int sum;
+    int sum = 0;
     int exp = 1;
     while (pow(10, exp) < abs(number))
     {
@@ -100,8 +100,8 @@ int main()
     while (exp >= 1)
     {
         rem = number % 10;
-        cout << rem;
-        sum = +rem;
+        //cout << rem;
+        sum = sum + rem;
         number = number / 10;
         exp--;
     }
