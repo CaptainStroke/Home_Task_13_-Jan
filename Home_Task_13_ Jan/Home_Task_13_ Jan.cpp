@@ -147,6 +147,28 @@
 
 //8. С клавиатуры вводится целое число.Определить, является ли оно простым.Простое число делится без остатка только на 1 и само на себя.
 
+//#include <iostream>
+//using namespace std;
+//int main()
+//{
+//    cout << "Enter number\n";
+//    int number;
+//    cin >> number;
+//    int div=2;
+//    while (div < number)
+//    {
+//        if (number % div == 0)
+//        {
+//            cout << "ordinary ";
+//            return 0;
+//            }
+//        div++;
+//    }
+//    cout << "Simple number\n";
+//}
+
+//9. Проверить, есть ли во введённом числе одинаковые цифры подряд.
+
 #include <iostream>
 using namespace std;
 int main()
@@ -154,17 +176,13 @@ int main()
     cout << "Enter number\n";
     int number;
     cin >> number;
-    int div=2;
-    while (div < number)
+    while (abs(number)>0)
     {
-        if (number % div == 0)
+        if (number % 10 == number / 10 % 10)
         {
-            cout << "ordinary ";
-            return 0;
-            }
-        div++;
+            cout << number % 10 << number / 10 % 10 << " same numbers\n";
+        }
+        number = number / 10; 
     }
-    cout << "Simple number\n";
+    cout << "\n";
 }
-
-//9. Проверить, есть ли во введённом числе одинаковые цифры подряд.
